@@ -10,6 +10,8 @@
 
 ```sh
 composer install --dev
+# phpunit with CI
+php vendor/kenjis/ci-phpunit-test/install.php
 ```
 
 ### 准备配置文件 config.php database.php
@@ -67,3 +69,10 @@ sh ./bin/checkstyle.sh
 ./vendor/bin/php-cs-fixer fix $yourfile
 ```
 
+
+## 单元测试
+
+```sh
+cd application/tests
+phpunit
+```

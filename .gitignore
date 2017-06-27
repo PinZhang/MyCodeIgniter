@@ -3,3 +3,5 @@ vendor
 .php_cs.cache
 application/config/config.php
 application/config/database.php
+application/tests/_ci_phpunit_test
+application/tests/build/
