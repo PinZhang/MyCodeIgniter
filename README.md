@@ -12,22 +12,47 @@
 composer install --dev
 ```
 
-准备 config.php
+### 准备配置文件 config.php database.php
 
 ```sh
 cp application/config/config.php.example application/config/config.php
+cp application/config/database.php.example application/config/database.php
 ```
 
-或者创建一个 soft link
+或者创建 soft link
 
 ```sh
-ln -s application/config/config.php.example application/config/config.php
+ln -s config.php.example application/config/config.php
+ln -s database.php.example application/config/database.php
 ```
 
-## 生产环境初始化 dependencies
+## 测试环境
+
+### 初始化 dependencies
+```sh
+composer install --no-dev
+```
+
+### 初始化配置文件
+
+```sh
+cp application/config/config.php.testing   application/config/config.php
+cp application/config/database.php.testing application/config/database.php
+```
+
+## 生产环境
+
+###初始化 dependencies
 
 ```sh
 composer install --no-dev
+```
+
+###初始化配置文件
+
+```sh
+cp application/config/config.php.prod   application/config/config.php
+cp application/config/database.php.prod application/config/database.php
 ```
 
 ## 检查代码格式
