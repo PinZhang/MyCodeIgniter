@@ -4,6 +4,7 @@ services:
 before_script:
   - php -v && composer -V && phpunit --version
   - ps aux | grep mysql && ps aux | grep redis
+  - composer install
 
 compile:
   script:
