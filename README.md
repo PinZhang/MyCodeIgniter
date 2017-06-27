@@ -76,3 +76,11 @@ sh ./bin/checkstyle.sh
 cd application/tests
 phpunit
 ```
+
+## Composer 镜像
+
+请移步：[Laravel China](https://laravel-china.org/composer)
+
+```sh
+composer config -g repo.packagist composer https://packagist.laravel-china.org
+```
