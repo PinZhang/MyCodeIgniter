@@ -60,3 +60,10 @@ cp application/config/database.php.prod application/config/database.php
 ```sh
 sh ./bin/checkstyle.sh
 ```
+
+### 修复单个 php 文件格式
+
+```sh
+./vendor/bin/php-cs-fixer fix $yourfile
+```
+
