@@ -1,7 +1,7 @@
 # !/bin/bash
 #
 
-for file in `find ./application -name *.php -not -path "*/config/*"`;
+for file in `find ./application -name *.php`;
 do
   if [ "${file##*.}" = "php" ]; then
     echo "Check if $file compliants to psr2 .."
